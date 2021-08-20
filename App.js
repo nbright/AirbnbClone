@@ -10,11 +10,12 @@ import React from 'react';
 
 import { SafeAreaView, StyleSheet, useColorScheme } from 'react-native';
 import HomeScreen from './src/screens/Home';
-
+import Post from './src/components/Post';
 const App: () => React$Node = () => {
   return (
     <SafeAreaView>
-      <HomeScreen />
+      {/* <HomeScreen /> */}
+      <Post />
     </SafeAreaView>
   );
 };
