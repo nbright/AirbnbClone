@@ -8,6 +8,8 @@ import Entypo from 'react-native-vector-icons/Entypo';
 const DestinationSearchScreen = props => {
 
     const [inputText, setInputText] = useState('');
+    // console.log(searchResults);
+    // const results = searchResults;
     return (
     <View>
         {/*import component*/}
