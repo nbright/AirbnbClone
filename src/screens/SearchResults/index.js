@@ -17,3 +17,4 @@ const SearchResultsScreen = (props) => {
 };
 
 export default SearchResultsScreen;
+
