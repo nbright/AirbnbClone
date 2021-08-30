@@ -3,18 +3,20 @@ import { View, FlatList, useWindowDimensions } from "react-native";
 import MapView, {Marker, PROVIDER_GOOGLE} from 'react-native-maps';
 import CustomMarker from "../../components/CustomMarker";
 import PostCarouselItem from "../../components/PostCarouselItem";
-
+import places from "../../../assets/data/feed";
 // import { API, graphqlOperation } from 'aws-amplify';
 import { listPosts } from '../../graphql/queries';
 
 const SearchResultsMaps = (props) => {
 
   const { posts } = props;
-
+  console.log(posts);
+  //console.log(place);
   const [selectedPlaceId, setSelectedPlaceId] = useState(null);
 
   const flatlist = useRef();
   const map = useRef();
+  
 
   const viewConfig = useRef({itemVisiblePercentThreshold: 70})
   const onViewChanged = useRef(({viewableItems}) => {
@@ -56,14 +58,20 @@ const SearchResultsMaps = (props) => {
           longitudeDelta: 0.8,
         }}
       >
-        {posts.map(place => (
+        {/* {posts.map(place => (
           <CustomMarker
             coordinate={{ latitude: place.latitude, longitude: place.longitude }}
             price={place.newPrice}
             isSelected={place.id === selectedPlaceId}
             onPress={() => setSelectedPlaceId(place.id)}
           />)
-        )}
+        )} */}
+        {places.map(place => {
+            <CustomMarker
+              coordinate={place.coordinate}
+              price={place.newPrice}
+            />
+        })}
       </MapView>
 
       <View style={{position: 'absolute', bottom: 10}}>
