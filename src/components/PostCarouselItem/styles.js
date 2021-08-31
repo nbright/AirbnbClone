@@ -6,15 +6,25 @@ const styles = StyleSheet.create({
     padding: 5,
 
 
+    // shadowColor: "#000",
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 5,
+    // },
+    // shadowOpacity: 0.34,
+    // shadowRadius: 6.27,
+
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 5,
+      height: 12,
     },
-    shadowOpacity: 0.34,
-    shadowRadius: 6.27,
+    shadowOpacity: 0.58,
+    shadowRadius: 16.00,
 
-    elevation: 10,
+    elevation: 24,
+
+    // elevation: 10,
   },
 
   innerContainer: {

@@ -32,10 +32,11 @@ const SearchResultsMaps = (props) => {
     if (!selectedPlaceId || !flatlist) {
       return;
     }
-    const index = posts.findIndex(place => place.id === selectedPlaceId)
+    const index = places.findIndex(place => place.id === selectedPlaceId)
+    console.log(index);
     flatlist.current.scrollToIndex({index})
 
-    const selectedPlace = posts[index];
+    const selectedPlace = places[index];
     const region = {
       latitude: selectedPlace.latitude,
       longitude: selectedPlace.longitude,
@@ -48,7 +49,7 @@ const SearchResultsMaps = (props) => {
   return (
     <View style={{width: '100%', height: '100%'}}>
       <MapView
-        //ref={map}
+        ref={map}
         style={{width: '100%', height: '100%'}}
         provider={PROVIDER_GOOGLE}
         initialRegion={{
@@ -76,11 +77,11 @@ const SearchResultsMaps = (props) => {
             />)
         )}
       </MapView>
-
+      
       <View style={{position: 'absolute', bottom: 10}}>
         <FlatList
           ref={flatlist}
-          data={posts}
+          data={places}
           renderItem={({item}) => <PostCarouselItem post={item} />}
           horizontal
           showsHorizontalScrollIndicator={false}
