@@ -10,8 +10,8 @@ import { listPosts } from '../../graphql/queries';
 const SearchResultsMaps = (props) => {
 
   const { posts } = props;
-  console.log(posts);
-  //console.log(place);
+  //console.log(places);
+
   const [selectedPlaceId, setSelectedPlaceId] = useState(null);
 
   const flatlist = useRef();
@@ -44,11 +44,11 @@ const SearchResultsMaps = (props) => {
     }
     map.current.animateToRegion(region);
   }, [selectedPlaceId])
-
+  
   return (
     <View style={{width: '100%', height: '100%'}}>
       <MapView
-        ref={map}
+        //ref={map}
         style={{width: '100%', height: '100%'}}
         provider={PROVIDER_GOOGLE}
         initialRegion={{
@@ -58,6 +58,7 @@ const SearchResultsMaps = (props) => {
           longitudeDelta: 0.8,
         }}
       >
+        
         {/* {posts.map(place => (
           <CustomMarker
             coordinate={{ latitude: place.latitude, longitude: place.longitude }}
@@ -66,12 +67,14 @@ const SearchResultsMaps = (props) => {
             onPress={() => setSelectedPlaceId(place.id)}
           />)
         )} */}
-        {places.map(place => {
+        {places.map(place => (
             <CustomMarker
               coordinate={place.coordinate}
               price={place.newPrice}
-            />
-        })}
+              isSelected={place.id === selectedPlaceId}
+              onPress={() => setSelectedPlaceId(place.id)}
+            />)
+        )}
       </MapView>
 
       <View style={{position: 'absolute', bottom: 10}}>
