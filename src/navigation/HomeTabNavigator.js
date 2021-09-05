@@ -1,5 +1,5 @@
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ExploreNavigator from './ExploreNavigator';
 import HomeScreen from '../screens/Home';
 import ProfileScreen from '../screens/Profile';
@@ -26,7 +26,7 @@ const HomeTabNavigator = (props) => {
         name={'Explore'}
         component={ExploreNavigator}
         options={{
-          tabBarIcon: ({color}) => (
+          tabBarIcon: ({ color }) => (
             <Fontisto name="search" size={25} color={color} />
           ),
         }}
@@ -35,7 +35,7 @@ const HomeTabNavigator = (props) => {
         name={'Saved'}
         component={HomeScreen}
         options={{
-          tabBarIcon: ({color}) => (
+          tabBarIcon: ({ color }) => (
             <FontAwesome name="heart-o" size={25} color={color} />
           ),
         }}
@@ -44,7 +44,7 @@ const HomeTabNavigator = (props) => {
         name={'Airbnb'}
         component={HomeScreen}
         options={{
-          tabBarIcon: ({color}) => (
+          tabBarIcon: ({ color }) => (
             <FontAwesome5 name="airbnb" size={25} color={color} />
           ),
         }}
@@ -53,7 +53,7 @@ const HomeTabNavigator = (props) => {
         name={'Messages'}
         component={HomeScreen}
         options={{
-          tabBarIcon: ({color}) => (
+          tabBarIcon: ({ color }) => (
             <Feather name="message-square" size={25} color={color} />
           ),
         }}
@@ -62,7 +62,7 @@ const HomeTabNavigator = (props) => {
         name={'profile'}
         component={ProfileScreen}
         options={{
-          tabBarIcon: ({color}) => (
+          tabBarIcon: ({ color }) => (
             <EvilIcons name="user" size={25} color={color} />
           ),
         }}
