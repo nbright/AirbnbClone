@@ -1,13 +1,13 @@
 {
   "auth": {
-    "airbnbclonefc83d9da": {
+    "airbnbclonebb9b5b2f": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "frontendAuthConfig": {
         "loginMechanisms": [
-          "EMAIL"
+          "PREFERRED_USERNAME"
         ],
         "signupAttributes": [
           "EMAIL"
