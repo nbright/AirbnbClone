@@ -60,14 +60,14 @@ const SearchResultsMaps = (props) => {
         }}
       >
         
-        {/* {posts.map(place => (
+        {posts.map(place => (
           <CustomMarker
             coordinate={{ latitude: place.latitude, longitude: place.longitude }}
             price={place.newPrice}
             isSelected={place.id === selectedPlaceId}
             onPress={() => setSelectedPlaceId(place.id)}
           />)
-        )} */}
+        )} 
         {places.map(place => (
             <CustomMarker
               coordinate={place.coordinate}

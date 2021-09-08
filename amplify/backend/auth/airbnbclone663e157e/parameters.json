@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "airbnbclonebb9b5b2f_identitypool_bb9b5b2f",
+    "identityPoolName": "airbnbclone663e157e_identitypool_663e157e",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "airbnbbb9b5b2f",
-    "userPoolName": "airbnbclonebb9b5b2f_userpool_bb9b5b2f",
+    "resourceNameTruncated": "airbnb663e157e",
+    "userPoolName": "airbnbclone663e157e_userpool_663e157e",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "airbnbbb9b5b2f_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "airbnb663e157e_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "bb9b5b2f",
-    "resourceName": "airbnbclonebb9b5b2f",
+    "sharedId": "663e157e",
+    "resourceName": "airbnbclone663e157e",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [

@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-airbnbclone-dev-191704-authRole",
-      "UnauthRoleArn": "arn:aws:iam::737845637338:role/amplify-airbnbclone-dev-191704-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::737845637338:role/amplify-airbnbclone-dev-191704-authRole",
+      "AuthRoleName": "amplify-airbnbclone-dev-133032-authRole",
+      "UnauthRoleArn": "arn:aws:iam::737845637338:role/amplify-airbnbclone-dev-133032-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::737845637338:role/amplify-airbnbclone-dev-133032-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-airbnbclone-dev-191704-deployment",
-      "UnauthRoleName": "amplify-airbnbclone-dev-191704-unauthRole",
-      "StackName": "amplify-airbnbclone-dev-191704",
-      "StackId": "arn:aws:cloudformation:us-east-2:737845637338:stack/amplify-airbnbclone-dev-191704/c256fc50-0fc4-11ec-8632-0a65b0228576",
-      "AmplifyAppId": "d10xtc6x75b7dv"
+      "DeploymentBucketName": "amplify-airbnbclone-dev-133032-deployment",
+      "UnauthRoleName": "amplify-airbnbclone-dev-133032-unauthRole",
+      "StackName": "amplify-airbnbclone-dev-133032",
+      "StackId": "arn:aws:cloudformation:us-east-2:737845637338:stack/amplify-airbnbclone-dev-133032/82894580-105d-11ec-be6c-0aa02198e858",
+      "AmplifyAppId": "d301q5d7eeojlr"
     },
     "categories": {
       "auth": {
-        "airbnbclonebb9b5b2f": {}
+        "airbnbclone663e157e": {}
       }
     }
   }

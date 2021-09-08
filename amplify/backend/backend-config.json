@@ -1,6 +1,6 @@
 {
   "auth": {
-    "airbnbclonebb9b5b2f": {
+    "airbnbclone663e157e": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -20,6 +20,24 @@
         "mfaTypes": [
           "SMS"
         ]
+      }
+    }
+  },
+  "api": {
+    "airbnbclone": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "description": ""
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
       }
     }
   }
