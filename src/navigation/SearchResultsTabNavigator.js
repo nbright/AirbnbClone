@@ -11,16 +11,15 @@ const Tab = createMaterialTopTabNavigator();
 const SearchResultsTabNavigator = (props) => {
 
   const [posts, setPosts] = useState([]);
-
   const route = useRoute();
-  console.log(route);
   const { guests, viewport }  = route.params;
-
+  console.log( guests);
   useEffect(() => { 
     const fetchPosts = async () => {
       try {
 
         const postsResult = await API.graphql(
+         
           graphqlOperation(listPosts, {
             filter: {
               and: {
@@ -45,6 +44,7 @@ const SearchResultsTabNavigator = (props) => {
         )
 
         setPosts(postsResult.data.listPosts.items);
+        console.log(postsResult.data.listPosts.items);
       } catch (e) {
         console.log("catch:");
         console.log(e);
@@ -55,7 +55,7 @@ const SearchResultsTabNavigator = (props) => {
   }, [])
 
   return (
-    <Tab.Navigator tabBarOptions={{
+    <Tab.Navigator screenOptions={{
       activeTintColor: '#f15454',
       indicatorStyle: {
         backgroundColor: '#f15454',
