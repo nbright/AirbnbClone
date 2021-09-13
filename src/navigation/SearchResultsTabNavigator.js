@@ -13,7 +13,7 @@ const SearchResultsTabNavigator = (props) => {
   const [posts, setPosts] = useState([]);
   const route = useRoute();
   const { guests, viewport }  = route.params;
-  console.log( guests);
+  console.log( viewport);
   useEffect(() => { 
     const fetchPosts = async () => {
       try {
@@ -44,7 +44,6 @@ const SearchResultsTabNavigator = (props) => {
         )
 
         setPosts(postsResult.data.listPosts.items);
-        console.log(postsResult.data.listPosts.items);
       } catch (e) {
         console.log("catch:");
         console.log(e);

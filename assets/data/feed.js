@@ -1,7 +1,7 @@
 export default [
   {
-    id: '0',
-    image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
+    id: '480e6844-1170-4630-b86b-e35b9034334e',
+    image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/5.jpg',
     type: 'Private Room',
     title: 'Bright room in the heart of the city',
     description: 'Lorem Ipsum is simplyLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
@@ -16,7 +16,7 @@ export default [
     },
   },
   {
-    id: '1',
+    id: '534e5385-a84d-4057-83fe-1cff8dc94766',
     image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg',
     type: 'Entire Flat',
     title: 'NEW lux. apartment in the center of Santa Cruz',
@@ -32,7 +32,7 @@ export default [
     },
   },
   {
-    id: '2',
+    id: 'b053b3b8-817c-4233-bde7-62e20239fdfa',
     image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg',
     type: 'Private Property',
     title: 'Green House Santa Cruz',
@@ -48,7 +48,7 @@ export default [
     },
   },
   {
-    id: '3',
+    id: '85dd70e6-9400-4454-8a3c-a4077be8e8d9',
     image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg',
     type: 'Entire Flat',
     title: 'Typical canarian house',
